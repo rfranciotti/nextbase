@@ -1,0 +1,7 @@
+{
+    "customizeUI.listRowHeight": 50,
+    "customizeUI.stylesheet": {
+        ".monaco-workbench .part > .content .folder-icon": "font-size: 18px !important; font-weight: bold;",
+        ".monaco-workbench .part > .content .file-icon": "font-size: 18px !important;"
+    }
+}

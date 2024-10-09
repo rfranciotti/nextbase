@@ -1,0 +1,51 @@
+{
+  "compilerOptions": {
+    "target": "ES6",
+    "lib": ["dom", "dom.iterable", "esnext"],
+    "allowJs": true,
+    "skipLibCheck": true,
+    "strict": true,
+    "noEmit": true,
+    "esModuleInterop": true,
+    "module": "esnext",
+    "moduleResolution": "bundler",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "jsx": "preserve",
+    "incremental": true,
+    "forceConsistentCasingInFileNames": true, //new
+    "allowSyntheticDefaultImports": true, //new
+    "baseUrl": ".", //new
+    "plugins": [
+      {
+        "name": "next"
+      },
+      //new
+      {
+        "name": "typescript-styled-plugin",
+        "tags": [
+          "styled",
+          "css",
+          "sty"
+        ]
+      }   
+    ],
+    "paths": {
+      //new
+      "@/*": [
+        "./*"
+      ],
+      "@components/*": [
+        "./components/*"
+      ],
+      "@redux/*": [
+        "./store/*"
+      ]
+    }
+  },
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts","**/*.d.ts","app/[...not_found]/not_found.js","app/not_found.js"],
+  "exclude": [
+  "node_modules",
+  ".next" // Adicione esta linha
+  ]
+}
